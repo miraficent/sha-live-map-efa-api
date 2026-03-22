@@ -1,0 +1,3361 @@
+{
+  "serverInfo": {
+    "controllerVersion": "10.6.28.10",
+    "serverID": "bw-ww31",
+    "virtDir": "mobidata-bw",
+    "serverTime": "2026-03-15T15:07:55",
+    "calcTime": 58.447,
+    "logRequestId": "689f6c3852c04870"
+  },
+  "version": "11.0.6.72",
+  "systemMessages": [
+    {
+      "type": "error",
+      "module": "BROKER",
+      "code": -8011,
+      "text": ""
+    }
+  ],
+  "locations": [
+    {
+      "id": "de:08127:20015",
+      "isGlobalId": true,
+      "name": "Hessental, Schwäbisch Hall-Hessental",
+      "disassembledName": "Schwäbisch Hall-Hessental",
+      "coord": [49.096763, 9.766762],
+      "type": "stop",
+      "matchQuality": 947,
+      "isBest": false,
+      "productClasses": [0, 5, 6, 7, 10, 13],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420015",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20732",
+      "isGlobalId": true,
+      "name": "Wackershofen, Bahnhof (Freilandmuseum)",
+      "disassembledName": "Bahnhof (Freilandmuseum)",
+      "coord": [49.137209, 9.69734],
+      "type": "stop",
+      "matchQuality": 925,
+      "isBest": false,
+      "productClasses": [13],
+      "parent": {
+        "id": "placeID:8127076:28",
+        "name": "Wackershofen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420732",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20013",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Schwäbisch Hall",
+      "disassembledName": "Schwäbisch Hall",
+      "coord": [49.10839, 9.733534],
+      "type": "stop",
+      "matchQuality": 1000,
+      "isBest": true,
+      "productClasses": [5, 6, 7, 10, 13],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420013",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21000",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, ZOB",
+      "disassembledName": "ZOB",
+      "coord": [49.116305, 9.735052],
+      "type": "stop",
+      "matchQuality": 940,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421000",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20653",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, BSZ",
+      "disassembledName": "BSZ",
+      "coord": [49.101098, 9.7371],
+      "type": "stop",
+      "matchQuality": 978,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420653",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21061",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, AOK",
+      "disassembledName": "AOK",
+      "coord": [49.108984, 9.739732],
+      "type": "stop",
+      "matchQuality": 978,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421061",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:1019",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, ALDI",
+      "disassembledName": "ALDI",
+      "coord": [49.122578, 9.737881],
+      "type": "stop",
+      "matchQuality": 975,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9401019",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20664",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Gunst",
+      "disassembledName": "Gunst",
+      "coord": [49.10398, 9.700431],
+      "type": "stop",
+      "matchQuality": 973,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420664",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20648",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Rollhof",
+      "disassembledName": "Rollhof",
+      "coord": [49.107473, 9.723643],
+      "type": "stop",
+      "matchQuality": 968,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420648",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20690",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Auwiese",
+      "disassembledName": "Auwiese",
+      "coord": [49.120562, 9.736148],
+      "type": "stop",
+      "matchQuality": 968,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420690",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20024",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Freibad",
+      "disassembledName": "Freibad",
+      "coord": [49.110272, 9.750431],
+      "type": "stop",
+      "matchQuality": 968,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420024",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20649",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Reifenhof",
+      "disassembledName": "Reifenhof",
+      "coord": [49.103609, 9.725781],
+      "type": "stop",
+      "matchQuality": 964,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420649",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:55556",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Breiteich",
+      "disassembledName": "Breiteich",
+      "coord": [49.11734, 9.722107],
+      "type": "stop",
+      "matchQuality": 964,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9455556",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20652",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Wagnerweg",
+      "disassembledName": "Wagnerweg",
+      "coord": [49.097063, 9.735438],
+      "type": "stop",
+      "matchQuality": 964,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420652",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20010",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Holzmarkt",
+      "disassembledName": "Holzmarkt",
+      "coord": [49.112277, 9.739444],
+      "type": "stop",
+      "matchQuality": 964,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420010",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20651",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Hagenbach",
+      "disassembledName": "Hagenbach",
+      "coord": [49.100163, 9.732132],
+      "type": "stop",
+      "matchQuality": 964,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420651",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20658",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Reiterhof",
+      "disassembledName": "Reiterhof",
+      "coord": [49.116987, 9.711453],
+      "type": "stop",
+      "matchQuality": 964,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420658",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:23271",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Fa. Stego",
+      "disassembledName": "Fa. Stego",
+      "coord": [49.100704, 9.702245],
+      "type": "stop",
+      "matchQuality": 962,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9423271",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20627",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Spitalbach",
+      "disassembledName": "Spitalbach",
+      "coord": [49.113383, 9.735528],
+      "type": "stop",
+      "matchQuality": 962,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420627",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20442",
+      "isGlobalId": true,
+      "name": "Buch (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.095392, 9.868263],
+      "type": "stop",
+      "matchQuality": 962,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:4",
+        "name": "Buch (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420442",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20023",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Stadtwerke",
+      "disassembledName": "Stadtwerke",
+      "coord": [49.103785, 9.742337],
+      "type": "stop",
+      "matchQuality": 962,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420023",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20657",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Sportplatz",
+      "disassembledName": "Sportplatz",
+      "coord": [49.113653, 9.712567],
+      "type": "stop",
+      "matchQuality": 962,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420657",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20670",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Sudetenweg",
+      "disassembledName": "Sudetenweg",
+      "coord": [49.106161, 9.719313],
+      "type": "stop",
+      "matchQuality": 962,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420670",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20012",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Schenkensee",
+      "disassembledName": "Schenkensee",
+      "coord": [49.111936, 9.754994],
+      "type": "stop",
+      "matchQuality": 960,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420012",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20663",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Fa. RECARO",
+      "disassembledName": "Fa. RECARO",
+      "coord": [49.102909, 9.70362],
+      "type": "stop",
+      "matchQuality": 960,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420663",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20009",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Herrenäcker",
+      "disassembledName": "Herrenäcker",
+      "coord": [49.112559, 9.750979],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420009",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20656",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Altenzentrum",
+      "disassembledName": "Altenzentrum",
+      "coord": [49.112695, 9.718954],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420656",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20654",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Mörikeplatz",
+      "disassembledName": "Mörikeplatz",
+      "coord": [49.103139, 9.736471],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420654",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20019",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Diakoniewerk",
+      "disassembledName": "Diakoniewerk",
+      "coord": [49.12523, 9.741043],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420019",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21060",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Urbanstraße",
+      "disassembledName": "Urbanstraße",
+      "coord": [49.106355, 9.741924],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421060",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20738",
+      "isGlobalId": true,
+      "name": "Erlach (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.142451, 9.745086],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:7",
+        "name": "Erlach (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420738",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20666",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Waldfriedhof",
+      "disassembledName": "Waldfriedhof",
+      "coord": [49.109978, 9.694996],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420666",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20665",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Steinbeisweg",
+      "disassembledName": "Steinbeisweg",
+      "coord": [49.104432, 9.703476],
+      "type": "stop",
+      "matchQuality": 959,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420665",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20662",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Aschenhausweg",
+      "disassembledName": "Aschenhausweg",
+      "coord": [49.104415, 9.713851],
+      "type": "stop",
+      "matchQuality": 957,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420662",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20021",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Waldorfschule",
+      "disassembledName": "Waldorfschule",
+      "coord": [49.112224, 9.722332],
+      "type": "stop",
+      "matchQuality": 957,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420021",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:92155",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Kerz / B 14",
+      "disassembledName": "Kerz / B 14",
+      "coord": [49.103244, 9.692436],
+      "type": "stop",
+      "matchQuality": 957,
+      "isBest": false,
+      "productClasses": [6, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9492155",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20692",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Rinderbachweg",
+      "disassembledName": "Rinderbachweg",
+      "coord": [49.109531, 9.715343],
+      "type": "stop",
+      "matchQuality": 957,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420692",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20699",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Rollhofschule",
+      "disassembledName": "Rollhofschule",
+      "coord": [49.106897, 9.721999],
+      "type": "stop",
+      "matchQuality": 957,
+      "isBest": false,
+      "productClasses": [7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420699",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20631",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Schweickerweg",
+      "disassembledName": "Schweickerweg",
+      "coord": [49.117499, 9.749003],
+      "type": "stop",
+      "matchQuality": 957,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420631",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20629",
+      "isGlobalId": true,
+      "name": "Anhausen (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.104497, 9.865209],
+      "type": "stop",
+      "matchQuality": 956,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:34",
+        "name": "Anhausen (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420629",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20677",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Daimlerstraße",
+      "disassembledName": "Daimlerstraße",
+      "coord": [49.102409, 9.699694],
+      "type": "stop",
+      "matchQuality": 956,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420677",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21065",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Löwenbrauerei",
+      "disassembledName": "Löwenbrauerei",
+      "coord": [49.106238, 9.733057],
+      "type": "stop",
+      "matchQuality": 956,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421065",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20020",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Scharfes Eck",
+      "disassembledName": "Scharfes Eck",
+      "coord": [49.11243, 9.730848],
+      "type": "stop",
+      "matchQuality": 956,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420020",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20655",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Michaelstraße",
+      "disassembledName": "Michaelstraße",
+      "coord": [49.110613, 9.717993],
+      "type": "stop",
+      "matchQuality": 956,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420655",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20761",
+      "isGlobalId": true,
+      "name": "Ramsbach (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.141746, 9.806082],
+      "type": "stop",
+      "matchQuality": 956,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:20",
+        "name": "Ramsbach (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420761",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20680",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Schafbrunnenweg",
+      "disassembledName": "Schafbrunnenweg",
+      "coord": [49.117992, 9.711812],
+      "type": "stop",
+      "matchQuality": 954,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420680",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21083",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Nikolaifriedhof",
+      "disassembledName": "Nikolaifriedhof",
+      "coord": [49.119744, 9.736929],
+      "type": "stop",
+      "matchQuality": 954,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421083",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20762",
+      "isGlobalId": true,
+      "name": "Otterbach (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.128228, 9.83171],
+      "type": "stop",
+      "matchQuality": 954,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:19",
+        "name": "Otterbach (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420762",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20668",
+      "isGlobalId": true,
+      "name": "Hohenholz (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.079543, 9.710393],
+      "type": "stop",
+      "matchQuality": 954,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:15",
+        "name": "Hohenholz (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420668",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20630",
+      "isGlobalId": true,
+      "name": "Hohenstadt (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.113841, 9.859882],
+      "type": "stop",
+      "matchQuality": 953,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:33",
+        "name": "Hohenstadt (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420630",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20014",
+      "isGlobalId": true,
+      "name": "Steinbach (Schwäbisch Hall), Mitte",
+      "disassembledName": "Mitte",
+      "coord": [49.099674, 9.747943],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:32",
+        "name": "Steinbach (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420014",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20704",
+      "isGlobalId": true,
+      "name": "Steigenhaus (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.066214, 9.654796],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:46",
+        "name": "Steigenhaus (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420704",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:22409",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Kirche",
+      "disassembledName": "Kirche",
+      "coord": [49.102403, 9.83869],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [6, 7],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9422409",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20635",
+      "isGlobalId": true,
+      "name": "Altenhausen (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.120556, 9.79514],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:1",
+        "name": "Altenhausen (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420635",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20035",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Heimbach B 14",
+      "disassembledName": "Heimbach B 14",
+      "coord": [49.10749, 9.711606],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420035",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20647",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Gaildorfer Straße",
+      "disassembledName": "Gaildorfer Straße",
+      "coord": [49.106961, 9.718819],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420647",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20632",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Limpurger Platz",
+      "disassembledName": "Limpurger Platz",
+      "coord": [49.115593, 9.751392],
+      "type": "stop",
+      "matchQuality": 952,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420632",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20737",
+      "isGlobalId": true,
+      "name": "Breitenstein (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.133641, 9.751096],
+      "type": "stop",
+      "matchQuality": 950,
+      "isBest": false,
+      "productClasses": [5, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:3",
+        "name": "Breitenstein (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420737",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20681",
+      "isGlobalId": true,
+      "name": "Steinbach (Schwäbisch Hall), Schule",
+      "disassembledName": "Schule",
+      "coord": [49.100704, 9.752443],
+      "type": "stop",
+      "matchQuality": 950,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:32",
+        "name": "Steinbach (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420681",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20744",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Hallweg",
+      "disassembledName": "Hallweg",
+      "coord": [49.105038, 9.838807],
+      "type": "stop",
+      "matchQuality": 950,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420744",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20862",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Hagebaumarkt / Lidl",
+      "disassembledName": "Hagebaumarkt / Lidl",
+      "coord": [49.105297, 9.709225],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420862",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20841",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Kerz / Augenzentrum",
+      "disassembledName": "Kerz / Augenzentrum",
+      "coord": [49.101845, 9.695247],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420841",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20759",
+      "isGlobalId": true,
+      "name": "Veinau, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.13611, 9.792068],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:27",
+        "name": "Veinau",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420759",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20642",
+      "isGlobalId": true,
+      "name": "Steinbach (Schwäbisch Hall), Comburg",
+      "disassembledName": "Comburg",
+      "coord": [49.098457, 9.754761],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:32",
+        "name": "Steinbach (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420642",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:52390",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Neue Reifensteige",
+      "disassembledName": "Neue Reifensteige",
+      "coord": [49.101327, 9.72606],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [5, 6, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9452390",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20022",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Schulzentrum West",
+      "disassembledName": "Schulzentrum West",
+      "coord": [49.100415, 9.727587],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420022",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20930",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Kunsthalle Würth",
+      "disassembledName": "Kunsthalle Würth",
+      "coord": [49.110631, 9.732465],
+      "type": "stop",
+      "matchQuality": 949,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420930",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20767",
+      "isGlobalId": true,
+      "name": "Wielandsweiler (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.054765, 9.624523],
+      "type": "stop",
+      "matchQuality": 948,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:30",
+        "name": "Wielandsweiler (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420767",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20747",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Im Rohr",
+      "disassembledName": "Im Rohr",
+      "coord": [49.105767, 9.830399],
+      "type": "stop",
+      "matchQuality": 948,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420747",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20439",
+      "isGlobalId": true,
+      "name": "Dörrenzimmern (Schwäbisch Hall), Ort",
+      "disassembledName": "Ort",
+      "coord": [49.088216, 9.851357],
+      "type": "stop",
+      "matchQuality": 948,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:5",
+        "name": "Dörrenzimmern (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420439",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:28296",
+      "isGlobalId": true,
+      "name": "Veinau, Post",
+      "disassembledName": "Post",
+      "coord": [49.137655, 9.785501],
+      "type": "stop",
+      "matchQuality": 947,
+      "isBest": false,
+      "productClasses": [6, 10],
+      "parent": {
+        "id": "placeID:8127076:27",
+        "name": "Veinau",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9428296",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20018",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Diakoniewerk / B 19",
+      "disassembledName": "Diakoniewerk / B 19",
+      "coord": [49.122284, 9.738429],
+      "type": "stop",
+      "matchQuality": 947,
+      "isBest": false,
+      "productClasses": [5, 6, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420018",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21099",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Justizvollzugsanstalt",
+      "disassembledName": "Justizvollzugsanstalt",
+      "coord": [49.100992, 9.705506],
+      "type": "stop",
+      "matchQuality": 947,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421099",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21105",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Betriebshof Röhler",
+      "disassembledName": "Betriebshof Röhler",
+      "coord": [49.102133, 9.697637],
+      "type": "stop",
+      "matchQuality": 947,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421105",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20438",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Mahläcker",
+      "disassembledName": "Mahläcker",
+      "coord": [49.094122, 9.839634],
+      "type": "stop",
+      "matchQuality": 947,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420438",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20441",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Dammstraße",
+      "disassembledName": "Dammstraße",
+      "coord": [49.098551, 9.837397],
+      "type": "stop",
+      "matchQuality": 946,
+      "isBest": false,
+      "productClasses": [6, 7],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420441",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20748",
+      "isGlobalId": true,
+      "name": "Jagstrot, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.116916, 9.850773],
+      "type": "stop",
+      "matchQuality": 946,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:16",
+        "name": "Jagstrot",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420748",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20036",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Abzw. Waldfriedhof",
+      "disassembledName": "Abzw. Waldfriedhof",
+      "coord": [49.106126, 9.702928],
+      "type": "stop",
+      "matchQuality": 946,
+      "isBest": false,
+      "productClasses": [5, 6, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420036",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:53063",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Gartenäcker",
+      "disassembledName": "Gartenäcker",
+      "coord": [49.099727, 9.842859],
+      "type": "stop",
+      "matchQuality": 945,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9453063",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20437",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Hauptstraße",
+      "disassembledName": "Hauptstraße",
+      "coord": [49.101598, 9.836256],
+      "type": "stop",
+      "matchQuality": 945,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420437",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20768",
+      "isGlobalId": true,
+      "name": "Hilbenhof, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.068892, 9.63718],
+      "type": "stop",
+      "matchQuality": 944,
+      "isBest": false,
+      "productClasses": [6, 7],
+      "parent": {
+        "id": "placeID:8127076:14",
+        "name": "Hilbenhof",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420768",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21066",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, An der Schießhütte",
+      "disassembledName": "An der Schießhütte",
+      "coord": [49.106438, 9.731557],
+      "type": "stop",
+      "matchQuality": 944,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421066",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20769",
+      "isGlobalId": true,
+      "name": "Rötenhof, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.062412, 9.62764],
+      "type": "stop",
+      "matchQuality": 944,
+      "isBest": false,
+      "productClasses": [6, 7],
+      "parent": {
+        "id": "placeID:8127076:21",
+        "name": "Rötenhof",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420769",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:26020",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Kerz / Modepark Röther",
+      "disassembledName": "Kerz / Modepark Röther",
+      "coord": [49.102333, 9.69302],
+      "type": "stop",
+      "matchQuality": 943,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9426020",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20669",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Hagenbacher Ring / Spar",
+      "disassembledName": "Hagenbacher Ring / Spar",
+      "coord": [49.100304, 9.737477],
+      "type": "stop",
+      "matchQuality": 943,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420669",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:22408",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Abzw. Buch",
+      "disassembledName": "Abzw. Buch",
+      "coord": [49.09938, 9.841439],
+      "type": "stop",
+      "matchQuality": 943,
+      "isBest": false,
+      "productClasses": [6, 7],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9422408",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20763",
+      "isGlobalId": true,
+      "name": "Bibersfeld, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.081391, 9.689004],
+      "type": "stop",
+      "matchQuality": 943,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:2",
+        "name": "Bibersfeld",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420763",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20771",
+      "isGlobalId": true,
+      "name": "Sittenhardt, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.059162, 9.648274],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:23",
+        "name": "Sittenhardt",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420771",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20046",
+      "isGlobalId": true,
+      "name": "Gelbingen, Mitte",
+      "disassembledName": "Mitte",
+      "coord": [49.130479, 9.74293],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:9",
+        "name": "Gelbingen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420046",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21067",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Karl-Kirchdörfer-Straße",
+      "disassembledName": "Karl-Kirchdörfer-Straße",
+      "coord": [49.105021, 9.73392],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421067",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20739",
+      "isGlobalId": true,
+      "name": "Eltershofen, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.139389, 9.764166],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [5, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:6",
+        "name": "Eltershofen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420739",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20638",
+      "isGlobalId": true,
+      "name": "Hessental, Krone",
+      "disassembledName": "Krone",
+      "coord": [49.10772, 9.772889],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420638",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21900",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Gebrüder-Reutter-Straße",
+      "disassembledName": "Gebrüder-Reutter-Straße",
+      "coord": [49.105526, 9.703144],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421900",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:91012",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Gerhart-Hauptmann-Straße",
+      "disassembledName": "Gerhart-Hauptmann-Straße",
+      "coord": [49.118398, 9.716726],
+      "type": "stop",
+      "matchQuality": 942,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9491012",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:91016",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Stadtbus SHA Betriebshof",
+      "disassembledName": "Stadtbus SHA Betriebshof",
+      "coord": [49.104032, 9.710968],
+      "type": "stop",
+      "matchQuality": 941,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9491016",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21732",
+      "isGlobalId": true,
+      "name": "Wackershofen, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.136092, 9.703135],
+      "type": "stop",
+      "matchQuality": 940,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:28",
+        "name": "Wackershofen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421732",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20760",
+      "isGlobalId": true,
+      "name": "Wolpertsdorf, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.144096, 9.825332],
+      "type": "stop",
+      "matchQuality": 940,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:31",
+        "name": "Wolpertsdorf",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420760",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20031",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Seniorenwohnanlage Gänsberg",
+      "disassembledName": "Seniorenwohnanlage Gänsberg",
+      "coord": [49.109743, 9.732527],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420031",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20032",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Seniorenwohnanlage Hohenlohe",
+      "disassembledName": "Seniorenwohnanlage Hohenlohe",
+      "coord": [49.120138, 9.75291],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420032",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:29060",
+      "isGlobalId": true,
+      "name": "Starkholzbach, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.08475, 9.662746],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [7],
+      "parent": {
+        "id": "placeID:8127076:24",
+        "name": "Starkholzbach",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9429060",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20741",
+      "isGlobalId": true,
+      "name": "Tüngental, Schule",
+      "disassembledName": "Schule",
+      "coord": [49.124042, 9.813852],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:26",
+        "name": "Tüngental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420741",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:53251",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Abzw. Roßhöhe",
+      "disassembledName": "Abzw. Roßhöhe",
+      "coord": [49.098716, 9.829995],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9453251",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20764",
+      "isGlobalId": true,
+      "name": "Bibersfeld, Schule",
+      "disassembledName": "Schule",
+      "coord": [49.085545, 9.693442],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:2",
+        "name": "Bibersfeld",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420764",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20811",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Bausparkasse / Ellwanger Straße",
+      "disassembledName": "Bausparkasse / Ellwanger Straße",
+      "coord": [49.112418, 9.745535],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420811",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21078",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Waldfriedhof / Rinnener Straße",
+      "disassembledName": "Waldfriedhof / Rinnener Straße",
+      "coord": [49.10842, 9.700287],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421078",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20772",
+      "isGlobalId": true,
+      "name": "Rötenhof, Abzw.",
+      "disassembledName": "Abzw.",
+      "coord": [49.05772, 9.626374],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:21",
+        "name": "Rötenhof",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420772",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20436",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Brückäckerstraße",
+      "disassembledName": "Brückäckerstraße",
+      "coord": [49.100127, 9.826967],
+      "type": "stop",
+      "matchQuality": 939,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420436",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21740",
+      "isGlobalId": true,
+      "name": "Weckrieden, Abzw.",
+      "disassembledName": "Abzw.",
+      "coord": [49.12319, 9.757411],
+      "type": "stop",
+      "matchQuality": 938,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:29",
+        "name": "Weckrieden",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421740",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20017",
+      "isGlobalId": true,
+      "name": "Hessental, Molkerei",
+      "disassembledName": "Molkerei",
+      "coord": [49.108278, 9.781099],
+      "type": "stop",
+      "matchQuality": 938,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420017",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20671",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Sudetenweg / Turnhalle Rollhof",
+      "disassembledName": "Sudetenweg / Turnhalle Rollhof",
+      "coord": [49.105326, 9.720652],
+      "type": "stop",
+      "matchQuality": 938,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420671",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20678",
+      "isGlobalId": true,
+      "name": "Hessental, Gründle",
+      "disassembledName": "Gründle",
+      "coord": [49.110354, 9.792625],
+      "type": "stop",
+      "matchQuality": 938,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420678",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21649",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Sudetenweg / Abzw. Neißeweg",
+      "disassembledName": "Sudetenweg / Abzw. Neißeweg",
+      "coord": [49.103503, 9.723185],
+      "type": "stop",
+      "matchQuality": 938,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421649",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21012",
+      "isGlobalId": true,
+      "name": "Hessental, Friedhof",
+      "disassembledName": "Friedhof",
+      "coord": [49.105491, 9.767553],
+      "type": "stop",
+      "matchQuality": 938,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421012",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20011",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Bausparkasse / Crailsheimer Straße",
+      "disassembledName": "Bausparkasse / Crailsheimer Straße",
+      "coord": [49.113024, 9.745391],
+      "type": "stop",
+      "matchQuality": 937,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420011",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:28295",
+      "isGlobalId": true,
+      "name": "Eltershofen, Abzw.",
+      "disassembledName": "Abzw.",
+      "coord": [49.132571, 9.772269],
+      "type": "stop",
+      "matchQuality": 937,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:6",
+        "name": "Eltershofen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9428295",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21024",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Scharfes Eck / Katharinenstraße",
+      "disassembledName": "Scharfes Eck / Katharinenstraße",
+      "coord": [49.112242, 9.73127],
+      "type": "stop",
+      "matchQuality": 937,
+      "isBest": false,
+      "productClasses": [5, 6, 7, 10],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421024",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:31015",
+      "isGlobalId": true,
+      "name": "Hessental, Fassfabrik",
+      "disassembledName": "Fassfabrik",
+      "coord": [49.096086, 9.764076],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9431015",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21106",
+      "isGlobalId": true,
+      "name": "Hessental, Fa. Inova",
+      "disassembledName": "Fa. Inova",
+      "coord": [49.114929, 9.781566],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421106",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20730",
+      "isGlobalId": true,
+      "name": "Gailenkirchen, Schule",
+      "disassembledName": "Schule",
+      "coord": [49.145677, 9.69328],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:8",
+        "name": "Gailenkirchen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420730",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20639",
+      "isGlobalId": true,
+      "name": "Hessental, Swiggerweg",
+      "disassembledName": "Swiggerweg",
+      "coord": [49.101386, 9.77341],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420639",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20742",
+      "isGlobalId": true,
+      "name": "Matheshörlebach, Ort",
+      "disassembledName": "Ort",
+      "coord": [49.114359, 9.828054],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:17",
+        "name": "Matheshörlebach",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420742",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:53008",
+      "isGlobalId": true,
+      "name": "Sulzdorf (Schwäbisch Hall), Abzw. Schwarzenlache",
+      "disassembledName": "Abzw. Schwarzenlache",
+      "coord": [49.098627, 9.829878],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:25",
+        "name": "Sulzdorf (Schwäbisch Hall)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9453008",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20030",
+      "isGlobalId": true,
+      "name": "Hessental, Im Hardt",
+      "disassembledName": "Im Hardt",
+      "coord": [49.112765, 9.77517],
+      "type": "stop",
+      "matchQuality": 936,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420030",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20675",
+      "isGlobalId": true,
+      "name": "Gottwollshausen, Schule",
+      "disassembledName": "Schule",
+      "coord": [49.121344, 9.716349],
+      "type": "stop",
+      "matchQuality": 935,
+      "isBest": false,
+      "productClasses": [7],
+      "parent": {
+        "id": "placeID:8127076:11",
+        "name": "Gottwollshausen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420675",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20659",
+      "isGlobalId": true,
+      "name": "Gottwollshausen, Mitte",
+      "disassembledName": "Mitte",
+      "coord": [49.122308, 9.719205],
+      "type": "stop",
+      "matchQuality": 935,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:11",
+        "name": "Gottwollshausen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420659",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20688",
+      "isGlobalId": true,
+      "name": "Hessental, Grundwiesen",
+      "disassembledName": "Grundwiesen",
+      "coord": [49.104397, 9.779509],
+      "type": "stop",
+      "matchQuality": 935,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420688",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20792",
+      "isGlobalId": true,
+      "name": "Bibersfeld, Langäcker",
+      "disassembledName": "Langäcker",
+      "coord": [49.086468, 9.682905],
+      "type": "stop",
+      "matchQuality": 935,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:2",
+        "name": "Bibersfeld",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420792",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20743",
+      "isGlobalId": true,
+      "name": "Tüngental, Hirtenwiesen",
+      "disassembledName": "Hirtenwiesen",
+      "coord": [49.121826, 9.810187],
+      "type": "stop",
+      "matchQuality": 934,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:26",
+        "name": "Tüngental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420743",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:31169",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Hagenbacher Ring / Berufsschulzentrum",
+      "disassembledName": "Hagenbacher Ring / Berufsschulzentrum",
+      "coord": [49.100327, 9.737657],
+      "type": "stop",
+      "matchQuality": 934,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9431169",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21011",
+      "isGlobalId": true,
+      "name": "Hessental, Alteer Straße",
+      "disassembledName": "Alteer Straße",
+      "coord": [49.104597, 9.763798],
+      "type": "stop",
+      "matchQuality": 934,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421011",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20691",
+      "isGlobalId": true,
+      "name": "Schwäbisch Hall, Tüngentaler Straße / Schulzentrum Ost",
+      "disassembledName": "Tüngentaler Straße / Schulzentrum Ost",
+      "coord": [49.115029, 9.756279],
+      "type": "stop",
+      "matchQuality": 933,
+      "isBest": false,
+      "productClasses": [6, 7],
+      "parent": {
+        "id": "placeID:8127076:22",
+        "name": "Schwäbisch Hall",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420691",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20731",
+      "isGlobalId": true,
+      "name": "Gailenkirchen, Gliemenhof",
+      "disassembledName": "Gliemenhof",
+      "coord": [49.14134, 9.693253],
+      "type": "stop",
+      "matchQuality": 933,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:8",
+        "name": "Gailenkirchen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420731",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20682",
+      "isGlobalId": true,
+      "name": "Hessental, Einkornstraße",
+      "disassembledName": "Einkornstraße",
+      "coord": [49.10368, 9.773419],
+      "type": "stop",
+      "matchQuality": 933,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420682",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20909",
+      "isGlobalId": true,
+      "name": "Bibersfeld, Old Bäumle",
+      "disassembledName": "Old Bäumle",
+      "coord": [49.082473, 9.686938],
+      "type": "stop",
+      "matchQuality": 933,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:2",
+        "name": "Bibersfeld",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420909",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:33702",
+      "isGlobalId": true,
+      "name": "Bibersfeld, Aussiedlerhof",
+      "disassembledName": "Aussiedlerhof",
+      "coord": [49.077407, 9.681054],
+      "type": "stop",
+      "matchQuality": 933,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:2",
+        "name": "Bibersfeld",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9433702",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20674",
+      "isGlobalId": true,
+      "name": "Gottwollshausen, Weingasse",
+      "disassembledName": "Weingasse",
+      "coord": [49.124483, 9.714337],
+      "type": "stop",
+      "matchQuality": 932,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:11",
+        "name": "Gottwollshausen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420674",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20004",
+      "isGlobalId": true,
+      "name": "Hessental, Feuerwache Ost",
+      "disassembledName": "Feuerwache Ost",
+      "coord": [49.115247, 9.777353],
+      "type": "stop",
+      "matchQuality": 932,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420004",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20733",
+      "isGlobalId": true,
+      "name": "Gailenkirchen, Breitwiesen",
+      "disassembledName": "Breitwiesen",
+      "coord": [49.143491, 9.690962],
+      "type": "stop",
+      "matchQuality": 932,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:8",
+        "name": "Gailenkirchen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420733",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:53109",
+      "isGlobalId": true,
+      "name": "Hessental, Schmollerstraße",
+      "disassembledName": "Schmollerstraße",
+      "coord": [49.109813, 9.78463],
+      "type": "stop",
+      "matchQuality": 932,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9453109",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:91013",
+      "isGlobalId": true,
+      "name": "Hessental, Am Kreuzstein",
+      "disassembledName": "Am Kreuzstein",
+      "coord": [49.108326, 9.765451],
+      "type": "stop",
+      "matchQuality": 932,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9491013",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:53130",
+      "isGlobalId": true,
+      "name": "Wackershofen, Freilandmuseum",
+      "disassembledName": "Freilandmuseum",
+      "coord": [49.137938, 9.697062],
+      "type": "stop",
+      "matchQuality": 931,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:28",
+        "name": "Wackershofen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9453130",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20016",
+      "isGlobalId": true,
+      "name": "Hessental, Sulzdorfer Straße",
+      "disassembledName": "Sulzdorfer Straße",
+      "coord": [49.107008, 9.774991],
+      "type": "stop",
+      "matchQuality": 931,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420016",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20703",
+      "isGlobalId": true,
+      "name": "Hessental, Hessentaler Straße",
+      "disassembledName": "Hessentaler Straße",
+      "coord": [49.098769, 9.767616],
+      "type": "stop",
+      "matchQuality": 930,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420703",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21009",
+      "isGlobalId": true,
+      "name": "Hessental, Abzw. Sonnenrain",
+      "disassembledName": "Abzw. Sonnenrain",
+      "coord": [49.109131, 9.768137],
+      "type": "stop",
+      "matchQuality": 929,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421009",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20660",
+      "isGlobalId": true,
+      "name": "Gottwollshausen, Abzw. Sülz",
+      "disassembledName": "Abzw. Sülz",
+      "coord": [49.127358, 9.71166],
+      "type": "stop",
+      "matchQuality": 928,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:11",
+        "name": "Gottwollshausen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420660",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20766",
+      "isGlobalId": true,
+      "name": "Bibersfeld, Starkholzbacher See",
+      "disassembledName": "Starkholzbacher See",
+      "coord": [49.076089, 9.663528],
+      "type": "stop",
+      "matchQuality": 928,
+      "isBest": false,
+      "productClasses": [6],
+      "parent": {
+        "id": "placeID:8127076:2",
+        "name": "Bibersfeld",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420766",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21733",
+      "isGlobalId": true,
+      "name": "Hessental, Alfred-Leikam-Straße",
+      "disassembledName": "Alfred-Leikam-Straße",
+      "coord": [49.112689, 9.786489],
+      "type": "stop",
+      "matchQuality": 928,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421733",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:27516",
+      "isGlobalId": true,
+      "name": "Hessental, Dolanallee / Sparkasse",
+      "disassembledName": "Dolanallee / Sparkasse",
+      "coord": [49.109666, 9.778863],
+      "type": "stop",
+      "matchQuality": 928,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9427516",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20687",
+      "isGlobalId": true,
+      "name": "Hessental, An den Wasenwiesen",
+      "disassembledName": "An den Wasenwiesen",
+      "coord": [49.105191, 9.78224],
+      "type": "stop",
+      "matchQuality": 928,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420687",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20661",
+      "isGlobalId": true,
+      "name": "Gottwollshausen, Abzw. Neuhofen",
+      "disassembledName": "Abzw. Neuhofen",
+      "coord": [49.126505, 9.71166],
+      "type": "stop",
+      "matchQuality": 927,
+      "isBest": false,
+      "productClasses": [5, 7],
+      "parent": {
+        "id": "placeID:8127076:11",
+        "name": "Gottwollshausen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420661",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:20685",
+      "isGlobalId": true,
+      "name": "Hessental, Haus der Wirtschaft",
+      "disassembledName": "Haus der Wirtschaft",
+      "coord": [49.114958, 9.776284],
+      "type": "stop",
+      "matchQuality": 927,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9420685",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21015",
+      "isGlobalId": true,
+      "name": "Hessental, Willy-Brandt-Allee Nord",
+      "disassembledName": "Willy-Brandt-Allee Nord",
+      "coord": [49.108573, 9.762747],
+      "type": "stop",
+      "matchQuality": 925,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421015",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08127:21102",
+      "isGlobalId": true,
+      "name": "Hessental, Geschwister-Scholl-Straße",
+      "disassembledName": "Geschwister-Scholl-Straße",
+      "coord": [49.111971, 9.780399],
+      "type": "stop",
+      "matchQuality": 925,
+      "isBest": false,
+      "productClasses": [5, 6, 7],
+      "parent": {
+        "id": "placeID:8127076:13",
+        "name": "Hessental",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9421102",
+        "mainLocality": "Schwäbisch Hall"
+      }
+    },
+    {
+      "id": "de:08136:3022",
+      "isGlobalId": true,
+      "name": "Schwäbisch Gmünd, Hallenbad",
+      "disassembledName": "Hallenbad",
+      "coord": [48.79395, 9.786831],
+      "type": "stop",
+      "matchQuality": 881,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:22",
+        "name": "Schwäbisch Gmünd",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303022",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3453",
+      "isGlobalId": true,
+      "name": "Rehnenhof, An der Oberen Halde 62",
+      "disassembledName": "An der Oberen Halde 62",
+      "coord": [48.818207, 9.78215],
+      "type": "stop",
+      "matchQuality": 813,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:19",
+        "name": "Rehnenhof",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303453",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3460",
+      "isGlobalId": true,
+      "name": "Rehnenhof, Obere Halde b. d. Stauferkl.",
+      "disassembledName": "Obere Halde b. d. Stauferkl.",
+      "coord": [48.818272, 9.781701],
+      "type": "stop",
+      "matchQuality": 811,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:19",
+        "name": "Rehnenhof",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303460",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3109",
+      "isGlobalId": true,
+      "name": "Schwäbisch Gmünd, Hardtstraße",
+      "disassembledName": "Hardtstraße",
+      "coord": [48.797873, 9.805057],
+      "type": "stop",
+      "matchQuality": 785,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:22",
+        "name": "Schwäbisch Gmünd",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303109",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3507",
+      "isGlobalId": true,
+      "name": "Reitprechts, Hasengasse",
+      "disassembledName": "Hasengasse",
+      "coord": [48.763393, 9.757096],
+      "type": "stop",
+      "matchQuality": 781,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:20",
+        "name": "Reitprechts",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303507",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3404",
+      "isGlobalId": true,
+      "name": "Rechberg (Schwäbisch Gmünd), Häge",
+      "disassembledName": "Häge",
+      "coord": [48.760082, 9.79125],
+      "type": "stop",
+      "matchQuality": 780,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:18",
+        "name": "Rechberg (Schwäbisch Gmünd)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303404",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3253",
+      "isGlobalId": true,
+      "name": "Hangendeinbach, Kreisstraße",
+      "disassembledName": "Kreisstraße",
+      "coord": [48.796855, 9.744978],
+      "type": "stop",
+      "matchQuality": 777,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:8",
+        "name": "Hangendeinbach",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303253",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3254",
+      "isGlobalId": true,
+      "name": "Hangendeinbach, Zum Remstal",
+      "disassembledName": "Zum Remstal",
+      "coord": [48.798062, 9.740882],
+      "type": "stop",
+      "matchQuality": 776,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:8",
+        "name": "Hangendeinbach",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303254",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3362",
+      "isGlobalId": true,
+      "name": "Hussenhofen, Elektro Hägele",
+      "disassembledName": "Elektro Hägele",
+      "coord": [48.81057, 9.856064],
+      "type": "stop",
+      "matchQuality": 775,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8136065:11",
+        "name": "Hussenhofen",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303362",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3043",
+      "isGlobalId": true,
+      "name": "Schwäbisch Gmünd, Haus der Gesundheit",
+      "disassembledName": "Haus der Gesundheit",
+      "coord": [48.793157, 9.803],
+      "type": "stop",
+      "matchQuality": 774,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:22",
+        "name": "Schwäbisch Gmünd",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303043",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3414",
+      "isGlobalId": true,
+      "name": "Lindach (Schwäbisch Gmünd), Hans-Diemar-Straße",
+      "disassembledName": "Hans-Diemar-Straße",
+      "coord": [48.831413, 9.817337],
+      "type": "stop",
+      "matchQuality": 770,
+      "isBest": false,
+      "productClasses": [5, 6],
+      "parent": {
+        "id": "placeID:8136065:14",
+        "name": "Lindach (Schwäbisch Gmünd)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303414",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3023",
+      "isGlobalId": true,
+      "name": "Schwäbisch Gmünd, Goethestraße/Hans-Scherr-Weg",
+      "disassembledName": "Goethestraße/Hans-Scherr-Weg",
+      "coord": [48.792754, 9.782716],
+      "type": "stop",
+      "matchQuality": 767,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:22",
+        "name": "Schwäbisch Gmünd",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303023",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3189",
+      "isGlobalId": true,
+      "name": "Hardt (Schwäbisch Gmünd), Einmündung Falkenbergstraße",
+      "disassembledName": "Einmündung Falkenbergstraße",
+      "coord": [48.795873, 9.817382],
+      "type": "stop",
+      "matchQuality": 765,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:9",
+        "name": "Hardt (Schwäbisch Gmünd)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303189",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    },
+    {
+      "id": "de:08136:3188",
+      "isGlobalId": true,
+      "name": "Hardt (Schwäbisch Gmünd), Einmündung Zwerenbergstraße",
+      "disassembledName": "Einmündung Zwerenbergstraße",
+      "coord": [48.794672, 9.820014],
+      "type": "stop",
+      "matchQuality": 765,
+      "isBest": false,
+      "productClasses": [5],
+      "parent": {
+        "id": "placeID:8136065:9",
+        "name": "Hardt (Schwäbisch Gmünd)",
+        "type": "locality"
+      },
+      "properties": {
+        "stopId": "9303188",
+        "mainLocality": "Schwäbisch Gmünd"
+      }
+    }
+  ]
+}
