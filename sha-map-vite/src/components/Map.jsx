@@ -1,6 +1,7 @@
  
 import { useState, useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { getStops, getDepartures, getTripStopTimes,getEfaDateTime } from '../api_efa';
 import busStopSvg from '../assets/bus-stop-icon.svg';
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -11,8 +12,21 @@ const busStopIcon = L.icon({
   iconAnchor: [8, 8], // Zentriert den Punkt unten in der Mitte
   popupAnchor: [0, -16]
 })
+
+
+
 function Map() {
 const [busStops, setBusStops] = useState([]) // Hier speichern wir die Daten
+
+const [departures, setDepartures] = useState([]);
+
+ const handlePopButtons = async function handleDepartures(stopId) {
+    const data = await getDepartures(stopId);
+    if (data && data.stopEvents) { 
+        setDepartures(data.stopEvents || data.departureList || []);
+      }
+      console.log(data);
+ } 
 
   useEffect(() => {
     async function loadStops() {
@@ -39,13 +53,25 @@ const [busStops, setBusStops] = useState([]) // Hier speichern wir die Daten
             detectRetina={true} // Macht die Karte auf Handys und Laptops schärfer
             maxZoom={26}
             />
-           {busStops.map((stop, index) => (
+        {busStops.map((stop, index) => (
           <Marker 
             key={index} 
             position={[stop.coord[0], stop.coord[1]]} 
             icon={busStopIcon}
+            eventHandlers={{
+              click: () => handlePopButtons(stop.id),
+            }}
           >
-            <Popup>{stop.name || "Haltestelle"}</Popup>
+            <Popup >
+              {stop.name || "Haltestelle"}
+              {departures.map((dep, index) => (
+                <div key={index}>
+                {dep.transportation.name} Nach <strong>{dep.transportation.destination.name}</strong> Abfahrt um - 
+                  {getEfaDateTime(dep.departureTimeEstimated || dep.departureTimePlanned).time}
+              
+                </div>
+              ))}
+            </Popup>
           </Marker>
         ))}
       </MapContainer>

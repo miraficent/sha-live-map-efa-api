@@ -1,75 +1,79 @@
-
-import { useState, useEffect } from 'react'
-import './App.css'
-import 'leaflet/dist/leaflet.css'
-import { getDepartures, getStops, getTripStops,getStopsNearby } from './api_efa.js'
-import Map from './components/MAp';
-
+import { useState, useEffect } from 'react';
+import { getStops, getDepartures, getTripStopTimes,getEfaDateTime } from './api_efa';
+import Map from './components/Map';
 function App() {
-  const [count, setCount] = useState(0)
-
-
- // 1. Ein State für den Text im Suchfeld
   const [searchCity, setSearchCity] = useState("Schwäbisch Hall");
-  // 2. Ein State für die Ergebnisse (Haltestellen)
   const [stops, setStops] = useState([]);
-  const [nearbyStops, setNearbyStops] = useState([]);
-  // Wird nur einmal beim Start ausgeführt
-useEffect(() => {
-    async function fetchData() {
-      // 1. Abfahrten laden (Optional: auch hier in einem State speichern)
-      await getDepartures("de:08127:20000");
+  const [departures, setDepartures] = useState([]);
+  const [tripStops, setTripStops] = useState([]);
+  const [selectedStopName, setSelectedStopName] = useState("");
 
-      // 2. Umgebungsdaten laden und im State SPEICHERN
-      const nearbyData = await getStopsNearby(9.7409, 48.5839, 1500);
-      if (nearbyData && nearbyData.pins) {
-        setNearbyStops(nearbyData.pins); // Jetzt weiß React von den Pins!
-      }
+  // Diese Funktion holt die Abfahrten, wenn man auf eine Haltestelle KLICKT
+  const handleStopClick = async (stopId, stopName) => {
+    const data = await getDepartures(stopId);
+    if (data && data.stopEvents) { // oder data.departureList, je nach API
+      setDepartures(data.stopEvents || data.departureList || []);
+      setSelectedStopName(stopName);
+      
     }
-    fetchData();
-  }, []);
+  };
+  const getRoute = async (tripId, locationId, tripCode, date) => {
+      const stopTripDatas = await getTripStopTimes(tripId, locationId, tripCode, date);
+      setTripStops(stopTripDatas);
+      console.log('test');
+      
+  }
 
-  // Funktion, die aufgerufen wird, wenn man das Formular abschickt
+
   const handleSearch = async (e) => {
-    e.preventDefault(); // Verhindert, dass die Seite neu lädt
+    e.preventDefault(); 
     const data = await getStops(searchCity);
     if (data && data.locations) {
       setStops(data.locations);
-      console.log("Gefundene Haltestellen:", data.locations);
     }
   };
 
   return (
     <>
-    <main>
-     <h1 >Schwäbisch Hall Map</h1>
+      <main>
+        <h1>Schwäbisch Hall Map</h1>
+        <Map stops={stops}/>
+        
+        <form onSubmit={handleSearch}>
+          <input 
+            value={searchCity} 
+            onChange={(e) => setSearchCity(e.target.value)} 
+          />
+          <button type="submit">Suchen</button>
+        </form>
 
-      <Map stops={stops} nearbyStops={nearbyStops}/>
-      <form onSubmit={handleSearch}>
-        <label htmlFor="search"> Geben Sie Haltestelle ein: </label>
-        <input 
-          type="text" 
-          placeholder="Stadt" 
-          id='search'
-          value={searchCity} // Das Feld zeigt immer den State an
-          onChange={(e) => setSearchCity(e.target.value)} // Update beim Tippen
-        />
-        <button type="submit">Suchen</button>
-      </form>
-
-
-      <ul>
-        {stops.map((stop) => (
-          <li key={stop.id} onClick={() => getDepartures(stop.id)}>
-            {stop.name}
-          </li>
-        ))}
-      </ul>
-    </main>
       
+        <ul>
+          {stops.map((stop) => (
+            <li key={stop.id} onClick={() => handleStopClick(stop.id, stop.name)} style={{cursor: 'pointer', color: 'blue', listStyle: 'none'}}>
+              {stop.name}
+            </li>
+          ))}
+        </ul>
+
+        {selectedStopName && (
+          <div className="departure-board">
+            <h2>Abfahrten für {selectedStopName}</h2>
+            <div className='departures'>
+              {departures.map((dep, index) => (
+                <div key={index}>
+                {dep.transportation.name} Nach <strong>{dep.transportation.destination.name}</strong> Abfahrt um - 
+                  {getEfaDateTime(dep.departureTimeEstimated || dep.departureTimePlanned).time}
+                  <button onClick={() => getRoute(dep.transportation.id,dep.location.id, dep.transportation.properties.tripCode,dep.departureTimePlanned)}>Route</button>
+                </div>
+                
+              ))}
+            </div>
+          </div>
+        )}
+      </main>
     </>
-    
-  )
+  );
 }
 
-export default App
+export default App;

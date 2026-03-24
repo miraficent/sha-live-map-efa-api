@@ -7,16 +7,16 @@ export async function getStops(cityName) {
     type_sf: 'any',
     name_sf: cityName,
     coordOutputFormat: 'WGS84[DD.ddddd]',
-  }).toString(); 
+  }).toString();
 
   const url = `${baseUrl}/XML_STOPFINDER_REQUEST?${params}`;
-  console.log("StopFinder URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
+
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Status: ${res.status}`);
     const data = await res.json();
-    console.log("Gefundene Haltestellen:", data);
-    return data; 
+    //console.log("Gefundene Haltestellen:", data);
+    return data;
   } catch (error) {
     console.error("Fehler StopFinder:", error.message);
   }
@@ -28,70 +28,90 @@ export async function getDepartures(stopId) {
     type_dm: "any",
     name_dm: stopId,
     mode: "direct",
-    limit: "5"
+    limit: "5",
+    useRealtime: 1
   }).toString();
 
   const url = `${baseUrl}/XML_DM_REQUEST?${params}`;
-  
+  console.log("Abfrage URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
+
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Status: ${res.status}`);
     const data = await res.json();
     console.log("Abfahrts-Daten:", data);
+
     return data;
   } catch (error) {
     console.error("Fehler Abfahrten:", error.message);
   }
 }
 
-export async function getTripStops(originId, destId) {
- const params = new URLSearchParams({
-    outputFormat: 'JSON',
-    locationServerActive: '1',
-    tripReductionMacro: '1',
-    type_origin: 'any',
-    name_origin: originId,
-    type_destination: 'any',
-    name_destination: destId,
-    calcNumberOfTrips: '1',
-    coordOutputFormat: 'WGS84[DD.ddddd]',
-  }).toString();
+//XML_TRIPSTOPTIMES_REQUEST
+export function getEfaDateTime(isString) {
+  const d = new Date(isString);
 
-    const url = `${baseUrl}/XML_TRIP_REQUEST2?${params}`;
-    //console.log("TripRequest URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
-    try {
-        const res = await fetch(url);
-        if (!res.ok) throw new Error(`Status: ${res.status}`);
-        const data = await res.json();
-        console.log("Reise-Daten:", data);
-        return data;
-    } catch (error) {
-        console.error("Fehler Reise:", error.message);
-    }
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const dd = String(d.getUTCDate()).padStart(2, '0');
+  const hh = String(d.getUTCHours() + 1).padStart(2, '0');
+  const min = String(d.getUTCMinutes()).padStart(2, '0');
+
+  return {
+    date: `${yyyy}${mm}${dd}`,
+    time: `${hh}:${min}`
+  };
 }
 
 
-export async function getStopsNearby(lat, lng, radius = 500) {
-const params = new URLSearchParams({
+export async function getTripStopTimes(tripId, locationId, tripCode, date) {
+  const dateTime = getEfaDateTime(date);
+  const params = new URLSearchParams({
     outputFormat: 'JSON',
-    coordReqType: 'STOPS',
-    type_1: 'COORD',
-    name_1: `${lng}:${lat}:WGS84[DD.ddddd]`,
-    radius_1: String(radius),
-    max: '50',
+    line: tripId,
+    stopID: locationId,
+    tripCode: tripCode,
+    date: dateTime.date,
+    time: dateTime.time,
   }).toString();
 
-  const url = `${baseUrl}/XML_COORD_REQUEST?${params}`;
-  console.log("StopFinder Nearby URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
+  const url = `${baseUrl}/XML_TRIPSTOPTIMES_REQUEST?${params}`;
+  console.log("TripStopTimes URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Status: ${res.status}`);
     const data = await res.json();
-    
-    // In der Antwort von XML_COORD_REQUEST heißen die Ergebnisse meistens 'pins'
-    console.log("Nahegelegene Haltestellen:", data.pins || data);
+    console.log("Trip Stop Times:", data);
     return data;
   } catch (error) {
-    console.error("Fehler StopFinder Nearby:", error.message);
+    console.error("Fehler Trip Stop Times:", error.message);
   }
+
+
 }
+
+/* export async function getTripStopTimes(linienId, locationId, tripCode, departureTimePlanned) {
+
+  const params = new URLSearchParams({
+    outputFormat: 'JSON',
+    line: linienId,
+    stopID: locationId,
+    tripCode: tripCode,
+    date: departureTimePlanned,
+    time: departureTimePlanned
+  }).toString();
+
+  const url = `${baseUrl}/XML_TRIPSTOPTIMES_REQUEST?${params}`;
+  console.log("TripRequest URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Status: ${res.status}`);
+    const data = await res.json();
+    console.log("Reise-Daten:", data);
+    return data;
+  } catch (error) {
+    console.error("Fehler Reise:", error.message);
+  }
+} */
+
+
