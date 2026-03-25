@@ -4,13 +4,13 @@ Interaktive Karte für den öffentlichen Nahverkehr in Schwäbisch Hall. Die App
 
 ## Technologie-Stack
 
-| Technologie | Version | Zweck |
-|---|---|---|
-| React | 19 | UI-Framework (Komponenten, State-Management) |
-| Vite | 8 | Build-Tool & Dev-Server |
-| Leaflet | 1.9 | Kartenrendering |
-| react-leaflet | 5.0 | React-Wrapper für Leaflet |
-| EFA-BW API | - | ÖPNV-Daten für Baden-Württemberg |
+* React - UI-Framework (Komponenten, State-Management)
+* Vite8Build-Tool & Dev-Server
+* Leaflet1.9Kartenrendering, react-leaflet5.0React-Wrapper für Leaflet
+* EFA-BW API-ÖPNV-Daten für Baden-Württemberg
+
+|  |
+| - |
 
 ## Projektstruktur
 
@@ -32,19 +32,24 @@ sha-map-vite/
 ## Komponenten
 
 ### App.jsx
+
 Die Hauptkomponente verwaltet den gesamten App-State:
-- **searchCity** - Suchbegriff für Haltestellen (Standard: "Schwäbisch Hall")
+
+- **searchCity** - Suchbegriff für Haltestellen (`<form>`)
 - **stops** - Liste der gefundenen Haltestellen
 - **departures** - Abfahrten einer ausgewählten Haltestelle
 - **stopCoord** - Koordinaten für die Routenanzeige
 
 Funktionen:
+
 - `handleSearch()` - Sucht Haltestellen nach Stadtname
 - `handleStopClick()` - Lädt Abfahrten einer Haltestelle
 - `getRoute()` - Lädt und zeichnet die Route einer Fahrt auf der Karte
 
 ### Map.jsx
+
 Die Kartenkomponente:
+
 - Zeigt eine OpenStreetMap-Karte zentriert auf Schwäbisch Hall (49.1128, 9.7388)
 - Lädt beim Start automatisch alle Haltestellen in Schwäbisch Hall
 - Zeigt Haltestellen als Marker mit Bus-Icon
@@ -71,13 +76,6 @@ Alle Requests sind **GET-Requests** mit Query-Parametern. Das allgemeine Schema:
 https://www.efa-bw.de/nvbw/{ENDPUNKT}?param1=wert1&param2=wert2
 ```
 
-Gemeinsame Parameter bei allen Requests:
-
-| Parameter | Wert | Bedeutung |
-|---|---|---|
-| `outputFormat` | `rapidJSON` oder `JSON` | Antwortformat (statt XML) |
-| `coordOutputFormat` | `WGS84[DD.ddddd]` | Koordinaten als Dezimalgrad (Lat/Lng) |
-
 ---
 
 ### 1. XML_STOPFINDER_REQUEST - Haltestellen suchen
@@ -85,36 +83,10 @@ Gemeinsame Parameter bei allen Requests:
 Sucht Haltestellen nach Name oder Stadt. Wird in `getStops()` verwendet.
 
 **URL:**
+
 ```
 /nvbw/XML_STOPFINDER_REQUEST?outputFormat=rapidJSON&locationServerActive=1&type_sf=any&name_sf=Schwäbisch Hall&coordOutputFormat=WGS84[DD.ddddd]
 ```
-
-**Parameter:**
-
-| Parameter | Wert | Bedeutung |
-|---|---|---|
-| `locationServerActive` | `1` | Aktiviert die Standortsuche |
-| `type_sf` | `any` | Suchtyp: "any" = alle Ortstypen (Haltestellen, Adressen, POIs) |
-| `name_sf` | z.B. `Schwäbisch Hall` | Der Suchbegriff |
-
-**Antwort (wichtige Felder):**
-```json
-{
-  "locations": [
-    {
-      "id": "de:08127:7210",
-      "name": "Schwäbisch Hall, Bahnhof",
-      "coord": [49.11234, 9.73456],
-      "type": "stop"
-    }
-  ]
-}
-```
-
-- `locations[]` - Array aller gefundenen Haltestellen
-- `id` - Eindeutige Haltestellen-ID (wird für Abfahrten benötigt)
-- `coord` - GPS-Koordinaten [Latitude, Longitude]
-- `name` - Haltestellenname
 
 ---
 
@@ -123,21 +95,13 @@ Sucht Haltestellen nach Name oder Stadt. Wird in `getStops()` verwendet.
 Holt die nächsten Abfahrten an einer Haltestelle. Wird in `getDepartures()` verwendet.
 
 **URL:**
+
 ```
 /nvbw/XML_DM_REQUEST?outputFormat=rapidJSON&type_dm=any&name_dm=de:08127:7210&mode=direct&limit=5&useRealtime=1
 ```
 
-**Parameter:**
-
-| Parameter | Wert | Bedeutung |
-|---|---|---|
-| `type_dm` | `any` | Ortstyp |
-| `name_dm` | z.B. `de:08127:7210` | Haltestellen-ID (aus StopFinder) |
-| `mode` | `direct` | Nur direkte Abfahrten (keine Umstiege) |
-| `limit` | `5` | Maximal 5 Ergebnisse |
-| `useRealtime` | `1` | Echtzeitdaten verwenden (wenn verfügbar) |
-
 **Antwort (wichtige Felder):**
+
 ```json
 {
   "stopEvents": [
@@ -170,21 +134,14 @@ Holt die nächsten Abfahrten an einer Haltestelle. Wird in `getDepartures()` ver
 Holt die Koordinaten des gesamten Fahrtwegs einer Linie. Wird in `getstopSeqCoord()` verwendet, um die Route als Polyline auf der Karte zu zeichnen.
 
 **URL:**
+
 ```
 /nvbw/XML_STOPSEQCOORD_REQUEST?outputFormat=JSON&line=ddb:90R01::R:j26&stopID=de:08127:7210&tripCode=12345&date=20260325&time=14:30&coordOutputFormat=WGS84[dd.ddddd]
 ```
 
-**Parameter:**
-
-| Parameter | Wert | Bedeutung |
-|---|---|---|
-| `line` | z.B. `ddb:90R01::R:j26` | Linien-/Fahrt-ID (aus `transportation.id`) |
-| `stopID` | z.B. `de:08127:7210` | Haltestellen-ID |
-| `tripCode` | z.B. `12345` | Trip-Code der Fahrt |
-| `date` | `YYYYMMDD` | Datum der Fahrt |
-| `time` | `HH:MM` | Uhrzeit der Fahrt |
 
 **Antwort (wichtige Felder):**
+
 ```json
 {
   "stopSeqCoords": {
