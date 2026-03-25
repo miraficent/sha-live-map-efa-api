@@ -63,8 +63,7 @@ export function getEfaDateTime(isString) {
   };
 }
 
-
-export async function getTripStopTimes(tripId, locationId, tripCode, date) {
+export async function getstopSeqCoord(tripId, locationId, tripCode, date) {
   const dateTime = getEfaDateTime(date);
   const params = new URLSearchParams({
     outputFormat: 'JSON',
@@ -73,10 +72,11 @@ export async function getTripStopTimes(tripId, locationId, tripCode, date) {
     tripCode: tripCode,
     date: dateTime.date,
     time: dateTime.time,
+    coordOutputFormat: "WGS84[dd.ddddd]"
   }).toString();
 
-  const url = `${baseUrl}/XML_TRIPSTOPTIMES_REQUEST?${params}`;
-  console.log("TripStopTimes URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
+  const url = `${baseUrl}/XML_STOPSEQCOORD_REQUEST?${params}`;
+  console.log("TripStopTimes URL:", url);
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`Status: ${res.status}`);
@@ -86,32 +86,5 @@ export async function getTripStopTimes(tripId, locationId, tripCode, date) {
   } catch (error) {
     console.error("Fehler Trip Stop Times:", error.message);
   }
-
-
 }
-
-/* export async function getTripStopTimes(linienId, locationId, tripCode, departureTimePlanned) {
-
-  const params = new URLSearchParams({
-    outputFormat: 'JSON',
-    line: linienId,
-    stopID: locationId,
-    tripCode: tripCode,
-    date: departureTimePlanned,
-    time: departureTimePlanned
-  }).toString();
-
-  const url = `${baseUrl}/XML_TRIPSTOPTIMES_REQUEST?${params}`;
-  console.log("TripRequest URL:", url); // Zum Debuggen: Zeigt die URL, die wir anfragen
-  try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`Status: ${res.status}`);
-    const data = await res.json();
-    console.log("Reise-Daten:", data);
-    return data;
-  } catch (error) {
-    console.error("Fehler Reise:", error.message);
-  }
-} */
-
 

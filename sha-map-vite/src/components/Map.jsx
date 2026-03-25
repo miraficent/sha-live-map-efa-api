@@ -1,22 +1,24 @@
  
 import { useState, useEffect } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import { getStops, getDepartures, getTripStopTimes,getEfaDateTime } from '../api_efa';
+import { MapContainer, TileLayer, Marker, Popup,Polyline } from 'react-leaflet'
+import { getStops, getDepartures, getstopSeqCoord,getEfaDateTime } from '../api_efa';
 import busStopSvg from '../assets/bus-stop-icon.svg';
-import L from 'leaflet'
+import L from 'leaflet';
+
 import 'leaflet/dist/leaflet.css'
 
 const busStopIcon = L.icon({
   iconUrl: busStopSvg,
-  iconSize: [8, 8],
-  iconAnchor: [8, 8], // Zentriert den Punkt unten in der Mitte
-  popupAnchor: [0, -16]
+  iconSize: [10, 10],
+  iconAnchor: [16, 16], 
+  popupAnchor: [0, -10]
 })
 
 
 
-function Map() {
-const [busStops, setBusStops] = useState([]) // Hier speichern wir die Daten
+function Map({ route }){
+  
+const [busStops, setBusStops] = useState([]) 
 
 const [departures, setDepartures] = useState([]);
 
@@ -61,6 +63,7 @@ const [departures, setDepartures] = useState([]);
             eventHandlers={{
               click: () => handlePopButtons(stop.id),
             }}
+            
           >
             <Popup >
               {stop.name || "Haltestelle"}
@@ -73,7 +76,13 @@ const [departures, setDepartures] = useState([]);
               ))}
             </Popup>
           </Marker>
+
+          
         ))}
+
+        {route.length > 0 && (
+            <Polyline positions={route} color="red" weight={5} />
+            )}
       </MapContainer>
     </div>
   );

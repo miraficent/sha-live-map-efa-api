@@ -1,29 +1,35 @@
 import { useState, useEffect } from 'react';
-import { getStops, getDepartures, getTripStopTimes,getEfaDateTime } from './api_efa';
+import { getStops, getDepartures, getstopSeqCoord,getEfaDateTime } from './api_efa';
+
 import Map from './components/Map';
 function App() {
   const [searchCity, setSearchCity] = useState("Schwäbisch Hall");
   const [stops, setStops] = useState([]);
   const [departures, setDepartures] = useState([]);
-  const [tripStops, setTripStops] = useState([]);
+  const [stopCoord, setstopSeqCoord] = useState([]);
   const [selectedStopName, setSelectedStopName] = useState("");
 
-  // Diese Funktion holt die Abfahrten, wenn man auf eine Haltestelle KLICKT
   const handleStopClick = async (stopId, stopName) => {
     const data = await getDepartures(stopId);
-    if (data && data.stopEvents) { // oder data.departureList, je nach API
+    if (data && data.stopEvents) { 
       setDepartures(data.stopEvents || data.departureList || []);
       setSelectedStopName(stopName);
       
     }
   };
-  const getRoute = async (tripId, locationId, tripCode, date) => {
-      const stopTripDatas = await getTripStopTimes(tripId, locationId, tripCode, date);
-      setTripStops(stopTripDatas);
-      console.log('test');
-      
-  }
 
+ 
+  const getRoute = async (tripId, locationId, tripCode, date) => {
+      const stopCoords = await getstopSeqCoord(tripId, locationId, tripCode, date);
+
+      const coordinates = stopCoords.stopSeqCoords.coords.path.split(" ").map(row => row.split(","));
+        const numCoords = coordinates.map(pair => [
+          Number(pair[1]), 
+          Number(pair[0]) 
+        ]);
+          console.log(numCoords);
+          setstopSeqCoord(numCoords);
+    }
 
   const handleSearch = async (e) => {
     e.preventDefault(); 
@@ -37,7 +43,7 @@ function App() {
     <>
       <main>
         <h1>Schwäbisch Hall Map</h1>
-        <Map stops={stops}/>
+        <Map stops={stops} route={stopCoord}/>
         
         <form onSubmit={handleSearch}>
           <input 
@@ -65,6 +71,7 @@ function App() {
                 {dep.transportation.name} Nach <strong>{dep.transportation.destination.name}</strong> Abfahrt um - 
                   {getEfaDateTime(dep.departureTimeEstimated || dep.departureTimePlanned).time}
                   <button onClick={() => getRoute(dep.transportation.id,dep.location.id, dep.transportation.properties.tripCode,dep.departureTimePlanned)}>Route</button>
+                  
                 </div>
                 
               ))}
