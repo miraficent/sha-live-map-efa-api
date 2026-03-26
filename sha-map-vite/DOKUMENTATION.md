@@ -203,3 +203,11 @@ npm run dev
 ```
 
 Die App läuft dann unter `http://localhost:5173`.
+
+## Source:
+
+https://leafletjs.com/examples.html
+https://react-leaflet.js.org/docs/example-popup-marker/
+https://react.dev/learn#writing-markup-with-jsx
+https://vite.dev/guide/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects#:~:text=An%20object%20is%20a%20collection,to%20objects%20in%20real%20life.
