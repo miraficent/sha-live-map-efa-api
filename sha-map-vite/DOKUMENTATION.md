@@ -139,6 +139,7 @@ Holt die Koordinaten des gesamten Fahrtwegs einer Linie. Wird in `getstopSeqCoor
 /nvbw/XML_STOPSEQCOORD_REQUEST?outputFormat=JSON&line=ddb:90R01::R:j26&stopID=de:08127:7210&tripCode=12345&date=20260325&time=14:30&coordOutputFormat=WGS84[dd.ddddd]
 ```
 
+s
 
 **Antwort (wichtige Felder):**
 

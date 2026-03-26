@@ -46,7 +46,7 @@ const [departures, setDepartures] = useState([]);
   }, [])
   return (
     
-    <div style={{ height: '500px', width: '100%' }}>
+    <div id="map" style={{ height: '100%' }}>
       
      <MapContainer center={[49.1128, 9.7388]} zoom={13} style={{ height: '500px' }}>
             <TileLayer
