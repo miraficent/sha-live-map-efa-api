@@ -67,12 +67,30 @@ const [departures, setDepartures] = useState([]);
           >
             <Popup >
               {stop.name || "Haltestelle"}
-              {departures.map((dep, index) => (
+             {departures.map((dep, index) => (
                 <div key={index}>
-                {dep.transportation.name} Nach <strong>{dep.transportation.destination.name}</strong> Abfahrt um - 
-                  {getEfaDateTime(dep.departureTimeEstimated || dep.departureTimePlanned).time}
-              
+                  <span>
+                    {dep.transportation.name}
+                  </span>
+                  <span>
+                     Nach <strong>{dep.transportation.destination.name}</strong> Abfahrt um -
+                  </span>
+                  <span>
+                    <span style={{ color: '#0ea10e', marginLeft: '0.5rem' }}>
+                      Geplante Zeit: 
+                      {getEfaDateTime(dep.departureTimePlanned || dep.departureTimePlanned).time}
+                    </span>
+                      
+                      {dep.departureTimeEstimated && (
+                      <span style={{ color: '#b30000', marginLeft: '0.5rem' }}>
+                        Geschätzte Zeit: 
+                          {getEfaDateTime(dep.departureTimeEstimated).time}
+                      </span>
+                 )}
+                      
+              </span>                  
                 </div>
+                
               ))}
             </Popup>
           </Marker>

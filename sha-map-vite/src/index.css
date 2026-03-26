@@ -144,11 +144,12 @@ button{
   pointer-events: all;
   cursor: pointer;
 }
+
+
 h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  
 }
 
 h1 {
@@ -156,7 +157,8 @@ h1 {
   hyphens: auto;
   font-size: 41px;
   line-height: 1;
-  margin: 0;
+  margin-block: 0 1rem;
+
 
 }
 h2 {

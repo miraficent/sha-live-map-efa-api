@@ -84,7 +84,7 @@ const closeStopContainer = () => {
           <h2>Haltestellen in {searchCity}</h2>        
         <form onSubmit={handleSearch}>
           <input 
-            value={searchCity} 
+            value={searchCity}
             onChange={(e) => setSearchCity(e.target.value)} 
           />
           <button type="submit">Suchen</button>
@@ -104,7 +104,18 @@ const closeStopContainer = () => {
                      Nach <strong>{dep.transportation.destination.name}</strong> Abfahrt um -
                   </span>
                   <span>
-                      {getEfaDateTime(dep.departureTimeEstimated || dep.departureTimePlanned).time}
+                    <span style={{ color: '#0ea10e', marginLeft: '0.5rem' }}>
+                      Geplante Zeit: 
+                      {getEfaDateTime(dep.departureTimePlanned || dep.departureTimePlanned).time}
+                    </span>
+                      
+                      {dep.departureTimeEstimated && (
+                      <span style={{ color: '#b30000', marginLeft: '0.5rem' }}>
+                        Geschätzte Zeit: 
+                          {getEfaDateTime(dep.departureTimeEstimated).time}
+                      </span>
+          )}
+                      
                   </span>
 
                   <button 
